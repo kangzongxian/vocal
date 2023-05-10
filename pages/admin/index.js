@@ -1,8 +1,13 @@
 // Index.js is the content to render for /admin route in this case
-export default function AdminPostsPage({ }) {
+import AuthCheck from '../../components/AuthCheck';
+
+
+export default function AdminPostsPage(props) {
   return (
     <main>
-      <h1>Sign Up</h1>
+      <AuthCheck>
+
+      </AuthCheck>
     </main>
-  )
+  );
 }
