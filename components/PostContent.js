@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 // UI component for main post content
 export default function PostContent({ post }) {
+  // If it is a number, convert to Date object
   const createdAt = typeof post?.createdAt === 'number' ? new Date(post.createdAt) : post.createdAt.toDate();
 
   return (
