@@ -70,16 +70,6 @@ export default function Post(props) {
           <strong>{post.heartCount || 0} 🤍</strong>
         </p>
 
-        <AuthCheck
-          fallback={
-            <Link href="/enter">
-              <button>💗 Sign Up</button>
-            </Link>
-          }
-        >
-          <HeartButton postRef={postRef} />
-        </AuthCheck>
-
       </aside>
     </main>
   );
