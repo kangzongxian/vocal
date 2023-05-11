@@ -11,7 +11,7 @@ function PostItem({ post, admin = false }) {
 
   return (
     <div className="card">
-      <Link href={`/${post.username}`}>
+      <Link legacyBehavior href={`/${post.username}`}>
         <a>
           <strong>By @{post.username}</strong>
         </a>
