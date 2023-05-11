@@ -10,9 +10,12 @@ export default function Heart({ postRef }) {
   // Create a user-to-post relationship
   const addHeart = async () => {
     const uid = auth.currentUser.uid;
+    // Use batch so that it is all or none
     const batch = firestore.batch();
 
+    // Increment heart count by 1
     batch.update(postRef, { heartCount: increment(1) });
+    // Set it such that this user had heart the post
     batch.set(heartRef, { uid });
 
     await batch.commit();
