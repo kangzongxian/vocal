@@ -27,6 +27,7 @@ export default function ImageUploader() {
       setProgress(pct);
 
       // Get downloadURL AFTER task resolves (Note: this is not a native Promise)
+      // So we cannot use async await
       task
         .then((d) => ref.getDownloadURL())
         .then((url) => {
