@@ -4,6 +4,8 @@ import PostContent from '../../components/PostContent';
 import { firestore, getUserWithUsername, postToJSON } from '../../lib/firebase';
 import { useDocumentData } from 'react-firebase-hooks/firestore';
 import HeartButton from '../../components/HeartButton';
+import AuthCheck from '../../components/AuthCheck';
+import Link from 'next/link';
 
 
 

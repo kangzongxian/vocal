@@ -6,7 +6,7 @@ import UserProfile from '../../components/UserProfile';
 import PostFeed from '../../components/PostFeed';
 
 // SSR
-export async function getServerSideProps({ query }) {
+  export async function getServerSideProps({ query }) {
   const { username } = query;
 
   // Fetch user documents
