@@ -1,11 +1,12 @@
 import { auth, firestore, googleAuthProvider } from '../lib/firebase';
 import { UserContext } from '../lib/context';
-
+import { useRouter } from 'next/router';
 import { useEffect, useState, useCallback, useContext } from 'react';
 import debounce from 'lodash.debounce';
 
 export default function Enter(props) {
   const { user, username } = useContext(UserContext);
+  const router = useRouter();
 
   // 1. user signed out <SignInButton />
   // 2. user signed in, but missing username <UsernameForm />
