@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # credentials
-/lib/firebase_credentials.js
+# /lib/firebase_credentials.js
 
 # dependencies
 /node_modules
