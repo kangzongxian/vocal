@@ -48,7 +48,7 @@ export default function Navbar() {
         {!username && (
           <li>
             <Link href="/enter">
-              <button className="btn-blue">Log in</button>
+              <button className="btn-blue">Login</button>
             </Link>
           </li>
         )}
